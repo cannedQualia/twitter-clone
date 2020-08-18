@@ -1,9 +1,11 @@
 import React from 'react'
+import './SidebarOption.css'
 
-function SidebarOption() {
+function SidebarOption({active, text, Icon}) { //props decons
     return (
-        <div className="">
-            {/* 41:35 */}
+        <div className={`sidebarOption ${active && 'sidebarOption--active'}`}>
+            <Icon />
+            <h2>{text}</h2>
         </div>
     )
 }
